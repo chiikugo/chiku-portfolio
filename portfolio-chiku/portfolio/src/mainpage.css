@@ -1,0 +1,6 @@
+.Chiku {
+    width: 250px;
+    height: 250px;
+    /* Optional: ensure the image maintains aspect ratio */
+    object-fit: contain;
+}
