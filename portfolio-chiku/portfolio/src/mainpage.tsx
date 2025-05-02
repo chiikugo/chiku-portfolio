@@ -1,9 +1,7 @@
 
 import Navbar from './NavBar/Navbar';
 import './mainpage.css';
-import { Routes, Route } from 'react-router-dom';
-import HomePage from './mainpage';
-import Work from './pages/work';
+
 
 function App() {
   return (
@@ -11,10 +9,7 @@ function App() {
      
     <div>
       <Navbar />
-      <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/work" element={<Work />} />
-    </Routes>
+      
       <main>
         <h1 className="Title">Chiku's Domain!</h1>
         <img 
