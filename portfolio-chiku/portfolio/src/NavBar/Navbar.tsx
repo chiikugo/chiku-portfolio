@@ -1,13 +1,46 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // or use next/link for Next.js
+
+
+import './Navbar.css';
 
 
 
 const Navbar: React.FC = () => {
   
   return (
-    <nav>
-        test
+    <nav className="nav">
+        <a href="/" className="site-title">
+        Chiku Okechukwu
+        </a>
+        <ul>
+            <li>
+                <a href="/work">
+                Work
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="/model">
+                Modeling
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="/Hobbies">
+                Hoobies
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="/friends">
+                Friends
+                </a>
+            </li>
+        </ul>
+
+        
     </nav>
   );
 };

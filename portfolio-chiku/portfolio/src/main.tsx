@@ -4,6 +4,8 @@ import App from './mainpage.tsx'; // or './mainpage'
 
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
+  
     <App />
+   
   </BrowserRouter>
 );
