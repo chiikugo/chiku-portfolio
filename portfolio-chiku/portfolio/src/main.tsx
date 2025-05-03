@@ -1,3 +1,5 @@
+import './index.css'
+
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './mainpage.tsx'; // or './mainpage'

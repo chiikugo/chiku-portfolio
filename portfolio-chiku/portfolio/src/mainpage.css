@@ -93,7 +93,7 @@ main.body p {
 .about {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: right;
   font-size: 1rem;
   text-align: left;
   max-width: 900px;
@@ -107,7 +107,7 @@ main.body p {
 
 
 h1 {
-  text-align: left;
+  text-align: center;
   color: #f5f5f5;
   position: relative;
   padding-bottom: 10px;
@@ -141,4 +141,128 @@ h1::after {
   border-radius: 50%;
   object-fit: cover;
   margin-right: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #57886c;
+  border-radius: 50%;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+
+.hover-circle-left {
+  left: -50px;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  opacity: 25%;
+}
+
+.hover-circle-right {
+  right: -50px;
+  bottom: 0;
+  transform: translate(50%, 50%);
+  opacity: 25%;
+}
+
+.image-container:hover .hover-circle {
+  opacity: 0.5;
+  transform: translate(0, 0);
+}
+
+.hover-circle-right {
+  right: -50px;
+  bottom: 0;
+  transform: translate(50%, 50%);
+}
+
+.image-container:hover .hover-circle {
+  opacity: 0.5;
+  transform: translate(0, 0);
+}
+
+.image-stack {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+}
+
+.Chiku, 
+.Chiku-underneath, 
+.Chiku-underneath-two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #57886c;
+  transition: all 0.3s ease;
+}
+
+.Chiku {
+  z-index: 3;
+}
+
+.Chiku-underneath {
+  z-index: 2;
+  transform: scale(0.75) translate(0px, 0px);
+  opacity: 0.7;
+}
+
+.Chiku-underneath-two {
+  z-index: 1;
+  transform: scale(0.75) translate(0px, 0px);
+  opacity: 0.5;
+}
+
+.image-stack:hover .Chiku {
+  transform: translate(20px, 20px);
+}
+
+.image-stack:hover .Chiku-underneath {
+  transform: scale(1) translate(100px, -200px);
+  opacity: .7;
+}
+
+.image-stack:hover .Chiku-underneath-two {
+  transform: scale(0.95) translate(-200px, -135px);
+  opacity: 0.7;
+}
+
+.about-bio {
+  font-size: 3.5 rem;
+}
+.workwork {
+  display: flex;           /* Enable flexbox */
+  align-items: center;     /* Vertically center items */
+  justify-content: right; /* Horizontally center items */
+  width: 100%;             /* Full width */
+  margin-top: 50px;        /* Add some top spacing */
+}
+
+.work-bio {
+  width: 50%; /* Takes up half the container */
+  text-align: left;
+  padding-left: 50px; /* Add some spacing from the left */
+  font-size: 1.2rem;
+  line-height: 1.6;
+
+  margin-bottom: 300px;
+
+
 }
