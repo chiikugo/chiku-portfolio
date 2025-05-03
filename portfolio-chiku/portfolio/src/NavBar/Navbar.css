@@ -1,17 +1,42 @@
- * {
-    box-sizing: border-box;
+/* Reset default link styles */
+.nav a {
+   color: #ffffff; /* Sets text color to white */
+   text-decoration: none; /* Removes underline */
  }
-
- body {
-    margin: 0;
+ 
+ /* Hover effect (optional) */
+ .nav a:hover {
+   color: #57886c; /* Changes color on hover */
+   /* You can add other hover effects here */
  }
-
+ 
+ /* Rest of your existing navbar styles */
  .nav {
-    background-color: green;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    padding: 0 1rem;
+   width: 100%;
+   background-color: #222222;
+   color: #ffffff;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 40px;
+   
+   position: sticky;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+ }
+ 
+ .site-title {
+   font-size: 1.5rem;
+   font-weight: bold;
+   /* No need to repeat color and text-decoration here as it's covered by .nav a */
+ }
+ 
+ /* Optional: Better organization for your navigation items */
+ .nav ul {
+   list-style: none;
+   display: flex;
+   gap: 2rem;
+   margin: 0;
+   padding: 0;
  }

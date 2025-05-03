@@ -1,6 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Libre Baskerville', serif;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  overflow-x: hidden;
+  line-height: 1.6;
+  min-height: 200vh; /* Encourage scrolling */
+  padding-bottom: 100px; /* Add extra bottom padding */
+}
+
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  max-width: 1200px; /* Increased max-width */
+  width: 90%; /* Added responsive width */
+  margin: 0 auto;
+  gap: 50px; /* Add vertical spacing between elements */
+}
+.name {
+    width: 50%; /* Full width */
+    height: auto; /* Auto height */
+    font-size: 2.5rem; /* Increased font size */
+    font-weight: bold; /* Make it bold */
+    text-align: right; /* Center the text */
+    margin-bottom: 10px; /* Add some bottom margin */
+    transition: transform 0.4s ease;
+
+}
+.name:hover {
+  transform: scale(1.05);
+  color: #57886c;
+
+    }
+main.body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 75px;
+  padding: 100px 0;
+  
+  border-radius: 15px;
+  
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 400px;
+  position: relative;
+}
+
+main.body:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 2px;
+  background-color: #57886c;
+}
+
 .Chiku {
-    width: 250px;
-    height: 250px;
-    /* Optional: ensure the image maintains aspect ratio */
-    object-fit: contain;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #57886c;
+  transition: transform 0.3s ease;
+}
+
+.Chiku:hover {
+  transform: scale(1.05);
+}
+
+main.body p {
+  font-size: 1.1rem;
+  max-width: 500px;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 0;
+  border-radius: 15px;
+  color: #f5f5f5;
+  line-height: 1.6;
+  margin-bottom: 300px;
+}
+
+
+h1 {
+  text-align: left;
+  color: #f5f5f5;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 1px;
+  background-color: #57886c;
+}
+
+.about .char {
+  display: inline-block;
+  opacity: 0;
+  color: #57886c; /* Accent color for hover effect */
+}
+
+.about:hover .char {
+  opacity: 1;
+}
+
+.chiku-little {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 30px;
 }

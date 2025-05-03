@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 import './Navbar.css';
 
@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
         <ul>
             <li>
                 <a href="/work">
-                Work
+                <Link to="/work"> Work </Link> 
                 </a>
             </li>
         </ul>
@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         <ul>
             <li>
                 <a href="/Hobbies">
-                Hoobies
+                Hobies
                 </a>
             </li>
         </ul>
