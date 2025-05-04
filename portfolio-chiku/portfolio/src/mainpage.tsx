@@ -64,7 +64,7 @@ function App() {
               Chiku Okechukwu
             </motion.a>
             <motion.div 
-              className="mt-2 bg-custom-bg border border-custom-green rounded-lg p-4 shadow-lg z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              className="mt-2 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               variants={{
                 hidden: { opacity: 0, y: -10 },
                 visible: { opacity: 1, y: 0, color: '#57886c', fontSize: '25px', gap: '5px' },
@@ -135,9 +135,75 @@ function App() {
       Work Experience
     </h1>
     <div className="workwork">
-    <p className="work-bio">
-      Job Job job blah blah blahhhh bruh
-    </p>
+      <div className="work-images">
+        <motion.img 
+          className="ibm" 
+          src="/assets/jobs/IBM Logo (1).png"
+          animate={{ 
+            y: [0, -15, 0], 
+            transition: { 
+              duration: 2, 
+              repeat: Infinity, 
+              ease: 'easeInOut' 
+            } 
+          }}
+        />
+        <motion.img 
+          className="trinity" 
+          src="/assets/jobs/Trinity Photopea.png"
+          animate={{ 
+            y: [0, -20, 0], 
+            transition: { 
+              duration: 2, 
+              repeat: Infinity, 
+              ease: 'easeInOut',
+              delay: 0.5 
+            } 
+          }}
+        />
+        <motion.img 
+          className="csaa" 
+          src="/assets/jobs/CSAA (1).png"
+          animate={{ 
+            y: [0, -20, 0], 
+            transition: { 
+              duration: 2, 
+              repeat: Infinity, 
+              ease: 'easeInOut',
+              delay: 1 
+            } 
+          }}
+        />
+      </div>
+    <motion.div 
+      className="work-bio"
+      animate={{
+        x:[0,-5,0],
+        transition:{
+          duration: 10,
+          repeat: Infinity,
+          ease: 'easeInOut',
+          delay: 2
+        }
+      }}
+    >
+      <p>
+        I've had the opportunity to work in several roles throughout my career, each contributing to my growth as a developer:
+      </p>
+      <br/>
+      <p>
+        • IBM Good Tech Scholar: This was my first exposure to front-end development. I gained hands-on experience working in Agile teams, learning how to build applications collaboratively and effectively.
+      </p>
+      <br/>
+      <p>
+        • Trinity IT Services: Here, I delved into back-end development, gaining experience with technologies like Docker, AWS, and Java. I was encouraged to deepen my skills through courses and personal training, and I presented findings from my own project work throughout the internship.
+      </p>
+      <br/>
+      <p>
+        • CSAA Insurance Group: My final internship focused on data engineering. I worked with tools such as Snowflake, Python, and SQL to build data pipelines and contribute to startup ideas for internal competitions. This experience deepened my understanding of data architecture and reinforced my passion for working with data-driven solutions.
+      </p>
+      
+    </motion.div>
     </div>
     
     </div>
