@@ -55,9 +55,9 @@ function App() {
             }}
           >
             <motion.a 
-              className="name text-2xl font-bold text-white hover:text-custom-green transition-colors duration-300"
+              className="name"
               variants={{
-                hidden: { color: '#ffffff' },
+                hidden: { color: '#2b2b2b' },
                 visible: { color: '#57886c' }
               }}
             >
@@ -196,13 +196,13 @@ function App() {
       </p>
       <br/>
       <p>
-        • Trinity IT Services: Here, I delved into back-end development, gaining experience with technologies like Docker, AWS, and Java. I was encouraged to deepen my skills through courses and personal training, and I presented findings from my own project work throughout the internship.
+        • Trinity IT Services: Here, I dove into back-end development, gaining experience with technologies like Docker, AWS, and Java. I was encouraged to deepen my skills through courses and personal training, and I presented findings from my own project work throughout the internship.
       </p>
       <br/>
       <p>
         • CSAA Insurance Group: My final internship focused on data engineering. I worked with tools such as Snowflake, Python, and SQL to build data pipelines and contribute to startup ideas for internal competitions. This experience deepened my understanding of data architecture and reinforced my passion for working with data-driven solutions.
       </p>
-      
+      <br/>
     </motion.div>
     </div>
     

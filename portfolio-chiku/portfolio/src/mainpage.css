@@ -1,19 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
+@font-face {
+  font-family: 'Larkin-LightItalic';
+  src: url('/fonts/LarkenDEMO-LightItalic.woff2') format('woff2'),
+       url('/fonts/LarkenDEMO-LightItalic.woff') format('woff');
+  font-style: italic;
+  font-weight: normal;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Larkin-LightItalic', serif;
 }
 
 body {
-  background-color: #1e1e1e;
-  color: #f5f5f5;
+  color: #1e1e1e;
+  background-color: #f5f5f5;
   overflow-x: hidden;
   line-height: 1.6;
   min-height: 200vh; /* Encourage scrolling */
   padding-bottom: 100px; /* Add extra bottom padding */
+  font-family: 'Larkin-LightItalic', serif !important;
+  font-style: italic !important;
+  font-weight: normal !important;
 }
 
 .skeleton {
@@ -34,7 +45,7 @@ body {
     text-align: right; /* Center the text */
     margin-bottom: 10px; /* Add some bottom margin */
     transition: transform 0.4s ease;
-
+    color: #2b2b2b;
 }
 .name:hover {
   transform: scale(1.05);
@@ -100,7 +111,7 @@ main.body p {
   margin: 0 auto;
   padding: 50px 0;
   border-radius: 15px;
-  color: #f5f5f5;
+  color: #2b2b2b;
   line-height: 1.6;
   margin-bottom: 300px;
 }
@@ -108,7 +119,7 @@ main.body p {
 
 h1 {
   text-align: center;
-  color: #f5f5f5;
+  color: #2b2b2b;
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 20px;
