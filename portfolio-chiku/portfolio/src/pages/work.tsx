@@ -17,6 +17,7 @@ function Work() {
                 <br/>
                 <p>
                     I'll also fill this with personal projects as well (I'll probably plg my google scholar here for now)
+                    I'm having a really lazy day so I'm just filling this with something
                 </p>
             </div>
         </div>

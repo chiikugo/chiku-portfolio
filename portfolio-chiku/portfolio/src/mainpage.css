@@ -247,12 +247,12 @@ h1::after {
 
 .image-stack:hover .Chiku-underneath {
   transform: scale(1) translate(100px, -200px);
-  opacity: .7;
+  opacity: .95;
 }
 
 .image-stack:hover .Chiku-underneath-two {
   transform: scale(0.95) translate(-200px, -135px);
-  opacity: 0.7;
+  opacity: 0.95;
 }
 
 .about-bio {

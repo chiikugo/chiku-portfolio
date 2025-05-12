@@ -22,9 +22,9 @@ const Navbar: React.FC = () => {
       </button>
       <motion.ul className={`nav-links${menuOpen ? ' active' : ''}`}
       animate= {{
-        x: [0,-2.5,0],
+        x: [0,-4,0],
         
-        y: [0,2.5,0],
+        y: [0,-4,0],
         transition: {
             duration: 2,
             repeat: Infinity,
